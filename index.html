@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Star Wars</title>
-  <link rel="stylesheet" href="dist/css/main.css">
-</head>
-<body>
-  <h1>Ola, mundo!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./src/images/favicon.ico"
+            alt="Logo Disney"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#hero">Inicio</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#character">Personagens</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <p class="hero__text">
+          "Star Wars" é uma saga épica que se desenrola em uma galáxia distante,
+          retratando a luta entre o bem e o mal, Jedi e Sith. A trilogia
+          original, composta por "Episódio IV: Uma Nova Esperança", "Episódio V:
+          O Império Contra-Ataca" e "Episódio VI: O Retorno de Jedi", segue a
+          jornada de Luke Skywalker, Princesa Leia e Han Solo contra o Império
+          Galáctico, liderado por Darth Vader e o Imperador Palpatine. A
+          trilogia prequela, formada por "Episódio I: A Ameaça Fantasma",
+          "Episódio II: Ataque dos Clones" e "Episódio III: A Vingança dos
+          Sith", explora a ascensão de Anakin Skywalker e sua queda para o lado
+          sombrio, culminando na formação do Império. A trilogia sequela,
+          iniciada com "Episódio VII: O Despertar da Força", continua a luta
+          entre a Resistência e a Primeira Ordem, apresentando novos personagens
+          como Rey, Finn e Kylo Ren. "Episódio VIII: Os Últimos Jedi" desafia as
+          noções tradicionais da Força, enquanto "Episódio IX: A Ascensão
+          Skywalker" conclui a saga com a redenção de Ben Solo e o fim da
+          linhagem Skywalker. A saga também inclui filmes derivados, como "Rogue
+          One" e "Han Solo", expandindo o universo Star Wars.
+        </p>
+      </div>
+    </section>
+    <section class="character" id="character">
+      <nav class="character__tabs">
+        <button data-tab-button="jedis" class="character__tabs__button">Jedis</button>
+        <button data-tab-button="siths" class="character__tabs__button">Siths</button>
+        <button data-tab-button="aliance" class="character__tabs__button">Aliança Rebelde</button>
+        <button data-tab-button="empire" class="character__tabs__button">Império</button>
+      </nav>
+      <ul data-tab-id="jedis" class="character__list">
+        <li class="character__list__item">
+          <p>Luke Skywalker</p>
+          <img src="./dist/images/jedis/luke.webp" alt="Luke Skywalker">
+        </li>
+        <li class="character__list__item">
+          <p>Mestre Yoda</p>
+          <img src="./dist/images/jedis/mestre-yoda.webp" alt="Mestre Yoda">
+        </li>
+        <li class="character__list__item">
+          <p>Obi Wan Kenobi</p>
+          <img src="./dist/images/jedis/obi-wan.avif" alt="Obi Wan Kenobi">
+        </li>
+        <li class="character__list__item">
+          <p>Qui-Gon Jin</p>
+          <img src="./dist/images/jedis/qui-gon-jinn.jpg" alt="Qui-Gon Jin">
+        </li>
+        <li class="character__list__item">
+          <p>Mace Windu</p>
+          <img src="./dist/images/jedis/mace-windu.jpeg" alt="Mace Windu">
+        </li>
+        <li class="character__list__item">
+          <p>Anakin Skywalker</p>
+          <img src="./dist/images/jedis/anakin-skywalker.webp" alt="Anakin Skywalker">
+        </li>
+      </ul>
+      <ul data-tab-id="siths" class="character__list">
+        <li class="character__list__item">
+          <p>Darth Vader</p>
+          <img src="./dist/images/siths/darth-vader.webp" alt="Darth Vader">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Sidius</p>
+          <img src="./dist/images/siths/darth-sidius.avif" alt="Darth Sidius">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Tyranus</p>
+          <img src="./dist/images/siths/darth-tyranus.webp" alt="Darth Tyranus">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Vitiate</p>
+          <img src="./dist/images/siths/darth-vitiate.webp" alt="Darth Vitiate">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Nihilus</p>
+          <img src="./dist/images/siths/darth-nihilus.webp" alt="Darth Nihilus">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Plagueis</p>
+          <img src="./dist/images/siths/darth-plagueis.webp" alt="Darth Plagueis">
+        </li>
+      </ul>
+      <ul data-tab-id="aliance" class="character__list">
+        <li class="character__list__item">
+          <p>Princesa Leia</p>
+          <img src="./dist/images/alianca/leia.webp" alt="Princesa Leia">
+        </li>
+        <li class="character__list__item">
+          <p>Han Solo</p>
+          <img src="./dist/images/alianca/han-solo.webp" alt="Han Solo">
+        </li>
+        <li class="character__list__item">
+          <p>R2-D2</p>
+          <img src="./dist/images/alianca/r2-d2.jpeg" alt="R2-D2">
+        </li>
+        <li class="character__list__item">
+          <p>C3PO</p>
+          <img src="./dist/images/alianca/c3-po.jpeg" alt="C3PO">
+        </li>
+        <li class="character__list__item">
+          <p>Jar Jar Binx/p>
+          <img src="./dist/images/alianca/jar-jar-binx.jpeg" alt="Jar Jar Binx">
+        </li>
+        <li class="character__list__item">
+          <p>Millenium Falcon/p>
+          <img src="./dist/images/alianca/milennium.webp" alt="Millenium Falcon">
+        </li>
+      </ul>
+      <ul data-tab-id="empire" class="character__list">
+        <li class="character__list__item">
+          <p>Stormtrooper</p>
+          <img src="./dist/images/imperio/stormtrooper.webp" alt="Stormtrooper">
+        </li>
+        <li class="character__list__item">
+          <p>Imperador Palpatine</p>
+          <img src="./dist/images/imperio/palpatine.webp" alt="Imperador Palpatine">
+        </li>
+        <li class="character__list__item">
+          <p>Darth Vader</p>
+          <img src="./dist/images/imperio/darth-vader.avif" alt="Darth Vader">
+        </li>
+        <li class="character__list__item">
+          <p>Estrela da Morte</p>
+          <img src="./dist/images/imperio/estrela-da-morte.jpeg" alt="Estrela da Morte">
+        </li>
+        <li class="character__list__item">
+          <p>General Grevious</p>
+          <img src="./dist/images/imperio/general-grevious.jpeg" alt="General Grevious">
+        </li>
+        <li class="character__list__item">
+          <p>Tie Figther</p>
+          <img src="./dist/images/imperio/tie.webp" alt="Tie Figther">
+        </li>
+      </ul>
+    </section>
+
+    <script src="./src/scripts/main.js"></script>
+  </body>
 </html>
